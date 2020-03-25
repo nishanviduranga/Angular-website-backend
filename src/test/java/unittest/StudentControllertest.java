@@ -48,56 +48,56 @@ public class StudentControllertest {
         }
 
 
-//
-//       @Test
-//       void whendeleteStudent() throws Exception
-//       {
-//        mockMvc.perform( MockMvcRequestBuilders
-//                .delete("/Student/delete/{id}",1)
-//                .accept(MediaType.APPLICATION_JSON))
-//                .andDo(print())
-//                .andExpect(status().isOk())
-//                .andExpect(MockMvcResultMatchers.jsonPath("$.payload").exists());
-//
-//       }
-//
-//
-//       @Test
-//       void whenupdateStudent() throws Exception {
-//           mockMvc.perform(MockMvcRequestBuilders
-//                   .put("/Student/updateStudent/{id}")
-//                   .accept(MediaType.APPLICATION_JSON))
-//                   .andDo(print())
-//                   .andExpect(status().isOk())
-//                   .andExpect(MockMvcResultMatchers.jsonPath("$.payload").exists());
-//       }
-//
-//
-//
-//        @Test
-//        public void whengetStudent() throws Exception
-//        {
-//
-//        mockMvc.perform(get("/Student/studentID/{id}", 1)
-//                .accept(MediaType.APPLICATION_JSON))
-//                .andDo(print())
-//                .andExpect(status().isOk())
-//                .andExpect(MockMvcResultMatchers.jsonPath("$.payload").exists());
-//
-//
-//        }
-//
-//        @Test
-//        public void whensaveStudent() throws Exception {
-//
-//            mockMvc.perform(MockMvcRequestBuilders
-//                    .post("/Student/saveStudent", 1)
-//                    .accept(MediaType.APPLICATION_JSON))
-//                    .andDo(print())
-//                    .andExpect(status().isOk())
-//                    .andExpect(MockMvcResultMatchers.jsonPath("$.payload").exists());
-//
-//
-//        }
+
+      @Test
+      void whendeleteStudent() throws Exception
+      {
+       mockMvc.perform( MockMvcRequestBuilders
+               .delete("/Student/delete/{id}",1)
+               .accept(MediaType.APPLICATION_JSON))
+               .andDo(print())
+               .andExpect(status().isOk())
+               .andExpect(MockMvcResultMatchers.jsonPath("$.payload").exists());
+
+      }
+
+
+      @Test
+      void whenupdateStudent() throws Exception {
+          mockMvc.perform(MockMvcRequestBuilders
+                  .put("/Student/updateStudent/{id}")
+                  .accept(MediaType.APPLICATION_JSON))
+                  .andDo(print())
+                  .andExpect(status().isOk())
+                  .andExpect(MockMvcResultMatchers.jsonPath("$.payload").exists());
+      }
+
+
+
+       @Test
+       public void whengetStudent() throws Exception
+       {
+
+       mockMvc.perform(get("/Student/studentID/{id}", 1)
+               .accept(MediaType.APPLICATION_JSON))
+               .andDo(print())
+               .andExpect(status().isOk())
+               .andExpect(MockMvcResultMatchers.jsonPath("$.payload").exists());
+
+
+       }
+
+       @Test
+       public void whensaveStudent() throws Exception {
+
+           mockMvc.perform(MockMvcRequestBuilders
+                   .post("/Student/saveStudent", 1)
+                   .accept(MediaType.APPLICATION_JSON))
+                   .andDo(print())
+                   .andExpect(status().isOk())
+                   .andExpect(MockMvcResultMatchers.jsonPath("$.payload").exists());
+
+
+       }
     }
 
