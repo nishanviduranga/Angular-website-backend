@@ -21,7 +21,7 @@ public class Student {
     private String name;
     private String age;
     private String telephoneNumber;
-    private String Address;
+    private String address;
 
 
 }

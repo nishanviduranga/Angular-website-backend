@@ -22,7 +22,7 @@ import rc.springbootmongodbdemo.service.JwtUserDetailsService;
 
 
 @RestController
-@CrossOrigin("*")
+@CrossOrigin(origins = "http://localhost:4200")
 public class JwtAuthenticationController {
 
     @Autowired
